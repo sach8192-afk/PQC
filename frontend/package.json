@@ -1,0 +1,25 @@
+{
+  "name": "pqchat-frontend",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:crypto": "node tests/crypto_stack.test.mjs",
+    "test:integration": "node tests/integration.test.mjs"
+  },
+  "dependencies": {
+    "@noble/post-quantum": "^0.7.1",
+    "idb": "^8.0.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "fake-indexeddb": "^6.2.5",
+    "vite": "^8.2.2",
+    "ws": "^8.21.3"
+  }
+}

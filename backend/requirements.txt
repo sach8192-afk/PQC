@@ -1,0 +1,10 @@
+fastapi>=0.141
+uvicorn[standard]>=0.52
+motor>=3.7
+pymongo>=4.9
+dnspython>=2.6
+mongomock>=4.3
+pydantic>=2.9
+python-multipart>=0.0.32
+pytest>=8.0
+httpx>=0.28

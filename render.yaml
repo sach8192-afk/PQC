@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: pqchat-v2
+    runtime: docker
+    region: singapore
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: PQCHAT_DB_NAME
+        value: pqchat
+      - key: PQCHAT_AUTH_SECRET
+        generateValue: true
+      - key: PQCHAT_TOKEN_TTL_SECONDS
+        value: "43200"
